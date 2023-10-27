@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+
+<body>
+    <header>
+        <section class="header-one">
+
+        </section>
+        <section class="header-two">
+            <div class="title">
+                <a href="./index.html">
+                    <i class="fa-solid fa-book"></i>
+                    <h1>Librería</h1>
+                </a>
+            </div>
+            <div class="nav-bar">
+                <nav>
+                    <ul id="nav-bar-books" class="nav-bar-books">
+                        <button id="close" class="close"><i class="fa-solid fa-xmark"></i></button>
+                        <li class="navLink"><a href="./index.html#inicio" id="inicio">Inicio</a></li>
+                        <li class="navLink"><a href="./index.html#libros" id="libros">Libros <i
+                                    class="fa-solid fa-angle-down"></i></a>
+                            <ul>
+                                <li class="navLink"><a href="./index.html#autobiografico"
+                                        id="autobiografico">Autobiográfico</a></li>
+                                <li class="navLink"><a href="./index.html#ensayo" id="ensayo">Ensayo</a></li>
+                                <li class="navLink"><a href="./index.html#novela" id="novela">Novela</a></li>
+                                <li class="navLink"><a href="./index.html#poemaEpico" id="poemaEpico">Poema Épico</a>
+                                </li>
+                                <li class="navLink"><a href="./index.html#relatos" id="relatos">Relatos</a></li>
+                                <li class="navLink"><a href="./index.html#tratadoDeTacticas"
+                                        id="tratadoDeTacticas">Tratado de Tácticas</a></li>
+                            </ul>
+                        </li>
+                        <li class="navLink"><a href="./index.html#contacto" id="contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                <button id="open" class="open"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </section>
+    </header>
+    <section id="home" class="home">
+        <div class="container-home" id="container-home">
+            <div class="title">
+                <h1><i class="fa-solid fa-book"></i> Librería</h1>
+                <p>Descubre un nuevo mundo entre <b class="pages">páginas</b>...</p>
+            </div>
+            <div class="container-home-carousel">
+                <div class="book">
+                    <button class="before-button-home-carousel" id="before-button-home-carousel"><i
+                            class="fa-solid fa-chevron-left"></i></button>
+                    <img class="card-home-carousel" src="./Images/Cien Años de Soledad - Gabriel García Márquez.webp"
+                        alt="">
+                    <img class="card-home-carousel" src="./Images/Don Quijote de la Mancha - Miguel de Cervantes.webp"
+                        alt="">
+                    <img class="card-home-carousel"
+                        src="./Images/Harry Potter y la Piedra Filosofal - J. K. Rowling.webp" alt="">
+                    <img class="card-home-carousel" src="./Images/Rayuela - Julio Cortázar.webp" alt="">
+                    <img class="card-home-carousel" src="./Images/Romeo y Julieta - William Shakespeare.webp" alt="">
+                    <button class="after-button-home-carousel" id="after-button-home-carousel"><i
+                            class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="repisa">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-recommended-books">
+            <h2>Recomendados</h2>
+            <div class="container-recommended-books-carousel">
+                <div class="container-recommended-books-carousel-page">
+                    <div class="card-books">
+                        <img src="./Images/1984 - George Orwell.webp" alt="">
+                        <h3>1984</h3>
+                        <h4>George Orwell</h4>
+                        <div>
+                            <p class="price-off">5.990,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>5.690,50$</p>
+                        <button><a href="./HTML/details.html?=id=1">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Cien Años de Soledad - Gabriel García Márquez.webp" alt="">
+                        <h3>Cien Años de Soledad</h3>
+                        <h4>Gabriel García Márquez</h4>
+                        <div>
+                            <p class="price-off">24.900,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>23.655,00$</p>
+                        <button><a href="./HTML/details.html?=id=4">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Cincuenta Sombras de Grey - E. L. James.webp" alt="">
+                        <h3>Cincuenta Sombras de Grey</h3>
+                        <h4>E. L. James</h4>
+                        <div>
+                            <p class="price-off">9.950,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>9.452,50$</p>
+                        <button><a href="./HTML/details.html?=id=5">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Diario de Ana Frank - Ana Frank.webp" alt="">
+                        <h3>Diario de Ana Frank</h3>
+                        <h4>Ana Frank</h4>
+                        <div>
+                            <p class="price-off">19.900,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>18.905,00$</p>
+                        <button><a href="./HTML/details.html?=id=9">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/El Código Da Vinci - Dan Brown.webp" alt="">
+                        <h3>El Código Da Vinci</h3>
+                        <h4>Dan Brown</h4>
+                        <div>
+                            <p class="price-off">7.950,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>7.552,50$</p>
+                        <button><a href="./HTML/details.html?=id=16">Ver Detalles</a></button>
+                    </div>
+                </div>
+                <div class="container-recommended-books-carousel-page">
+                    <div class="card-books">
+                        <img src="./Images/El Gran Gatsby - F. Scott Fitzgerald.webp" alt="">
+                        <h3>El Gran Gatsby</h3>
+                        <h4>F. Scott Fitzgerald</h4>
+                        <div>
+                            <p class="price-off">12.500,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>11.875,00$</p>
+                        <button><a href="./HTML/details.html?=id=19">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/El Psicoanalista - John Katzenbach.webp" alt="">
+                        <h3>El Psicoanalista</h3>
+                        <h4>John Katzenbach</h4>
+                        <div>
+                            <p class="price-off">190.000,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>180.500,00$</p>
+                        <button><a href="./HTML/details.html?=id=27">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Juego de Tronos - George R. R. Martin.webp" alt="">
+                        <h3>Juego de Tronos</h3>
+                        <h4>George R. R. Martin</h4>
+                        <div>
+                            <p class="price-off">27.900,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>26.505,00$</p>
+                        <button><a href="./HTML/details.html?=id=38">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/La Metamorfosis - Franz Kafka.webp" alt="">
+                        <h3>La Metamorfosis</h3>
+                        <h4>Franz Kafka</h4>
+                        <div>
+                            <p class="price-off">9.990,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>9.490,50$</p>
+                        <button><a href="./HTML/details.html?=id=39">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Orgullo y Prejuicio - Jane Austen.webp" alt="">
+                        <h3>Orgullo y Prejuicio</h3>
+                        <h4>Jane Austen</h4>
+                        <div>
+                            <p class="price-off">15.950,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>15.152,50$</p>
+                        <button><a href="./HTML/details.html?=id=47">Ver Detalles</a></button>
+                    </div>
+                </div>
+                <div class="buttons-before-after">
+                    <button class="before-button-recommended-books-carousel"
+                        id="before-button-recommended-books-carousel"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="after-button-recommended-books-carousel"
+                        id="after-button-recommended-books-carousel"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-best-sellers-books">
+            <h2>Más Vendidos</h2>
+            <div class="container-best-sellers-books-carousel">
+                <div class="container-best-sellers-books-carousel-page">
+                    <div class="card-books">
+                        <img src="./Images/Diez Negritos - Agatha Christie.webp" alt="">
+                        <h3>Diez Negritos</h3>
+                        <h4>Agatha Christie</h4>
+                        <div>
+                            <p class="price-off">850,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>807,50$</p>
+                        <button><a href="./HTML/details.html?=id=10">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Don Quijote de la Mancha - Miguel de Cervantes.webp" alt="">
+                        <h3>Don Quijote de la Mancha</h3>
+                        <h4>Miguel de Cervantes</h4>
+                        <div>
+                            <p class="price-off">21.750,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>20.662,50$</p>
+                        <button><a href="./HTML/details.html?=id=12">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/El Guardián Entre el Centeno - J.D. Salinger.webp" alt="">
+                        <h3>El Guardián Entre el Centeno</h3>
+                        <h4>J. D. Salinger</h4>
+                        <div>
+                            <p class="price-off">16.950,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>16.102,50$</p>
+                        <button><a href="./HTML/details.html?=id=20">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/El Perfume - Patrick Süskind.webp" alt="">
+                        <h3>El Perfume</h3>
+                        <h4>Patrick Süskind</h4>
+                        <div>
+                            <p class="price-off">7.950,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>7.552,50$</p>
+                        <button><a href="./HTML/details.html?=id=25">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/El Retrato de Dorian Grey - Oscar Wilde.webp" alt="">
+                        <h3>El Retrato de Dorian Grey</h3>
+                        <h4>Oscar Wilde</h4>
+                        <div>
+                            <p class="price-off">5.950,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>5.652,50$</p>
+                        <button><a href="./HTML/details.html?=id=28">Ver Detalles</a></button>
+                    </div>
+                </div>
+                <div class="container-best-sellers-books-carousel-page">
+                    <div class="card-books">
+                        <img src="./Images/El Señor de las Moscas - William Golding.webp" alt="">
+                        <h3>El Señor de las Moscas</h3>
+                        <h4>William Golding</h4>
+                        <div>
+                            <p class="price-off">12.500,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>11.875,00$</p>
+                        <button><a href="./HTML/details.html?=id=29">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/El Viejo y el Mar - Ernest Hemingway.webp" alt="">
+                        <h3>El Viejo y el Mar</h3>
+                        <h4>Ernest Hemingway</h4>
+                        <div>
+                            <p class="price-off">12.950,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>12.302,50$</p>
+                        <button><a href="./HTML/details.html?=id=31">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Lolita - Vladimir Nabokov.webp" alt="">
+                        <h3>Lolita</h3>
+                        <h4>Vladimir Nabokov</h4>
+                        <div>
+                            <p class="price-off">13.900,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>13.205,00$</p>
+                        <button><a href="./HTML/details.html?=id=42">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Odisea - Homero.webp" alt="">
+                        <h3>Odisea</h3>
+                        <h4>Homero</h4>
+                        <div>
+                            <p class="price-off">20.000,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>19.000,00$</p>
+                        <button><a href="./HTML/details.html?=id=46">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Una Habitación Propia - Virginia Woolf.webp" alt="">
+                        <h3>Una Habitación Propia</h3>
+                        <h4>Virginia Woolf</h4>
+                        <div>
+                            <p class="price-off">12.500,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>11.875,00$</p>
+                        <button><a href="./HTML/details.html?=id=50">Ver Detalles</a></button>
+                    </div>
+                </div>
+                <div class="buttons-before-after">
+                    <button class="before-button-best-sellers-books-carousel"
+                        id="before-button-best-sellers-books-carousel"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="after-button-best-sellers-books-carousel"
+                        id="after-button-best-sellers-books-carousel"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-new-entries-books">
+            <h2>Nuevos Ingresos</h2>
+            <div class="container-new-entries-books-carousel">
+                <div class="container-new-entries-books-carousel-page">
+                    <div class="card-books">
+                        <img src="./Images/Crimen y Castigo - Fiodor Mijaïlovich Dostoevskiï.webp" alt="">
+                        <h3>Crimen y Castigo</h3>
+                        <h4>Fiodor Dostoevskiï</h4>
+                        <div>
+                            <p class="price-off">21.950,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>20.852,50$</p>
+                        <button><a href="./HTML/details.html?=id=6">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Crónicas Marcianas - Ray Bradbury.webp" alt="">
+                        <h3>Crónicas Marcianas</h3>
+                        <h4>Ray Bradbury</h4>
+                        <div>
+                            <p class="price-off">9.950,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>9.452,50$</p>
+                        <button><a href="./HTML/details.html?=id=7">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Divina Comedia - Dante Alighieri.webp" alt="">
+                        <h3>Divina Comedia</h3>
+                        <h4>Dante Alighieri</h4>
+                        <div>
+                            <p class="price-off">16.950,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>16.102,50$</p>
+                        <button><a href="./HTML/details.html?=id=11">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/El Alquimista - Paulo Coelho.webp" alt="">
+                        <h3>El Alquimista</h3>
+                        <h4>Paulo Coelho</h4>
+                        <div>
+                            <p class="price-off">18.000,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>17.100,00$</p>
+                        <button><a href="./HTML/details.html?=id=14">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/El Arte de la Guerra - Sun Tzu.webp" alt="">
+                        <h3>El Arte de la Guerra</h3>
+                        <h4>Sun Tzu</h4>
+                        <div>
+                            <p class="price-off">29.000,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>27.550,00$</p>
+                        <button><a href="./HTML/details.html?=id=15">Ver Detalles</a></button>
+                    </div>
+                </div>
+                <div class="container-new-entries-books-carousel-page">
+                    <div class="card-books">
+                        <img src="./Images/El Conde de Montecristo - Alexandre Dumas.webp" alt="">
+                        <h3>El Conde de Montecristo</h3>
+                        <h4>Alexandre Dumas</h4>
+                        <div>
+                            <p class="price-off">16.990,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>16.140,50$</p>
+                        <button><a href="./HTML/details.html?=id=17">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/El Extranjero - Albert Camus.webp" alt="">
+                        <h3>El Extranjero</h3>
+                        <h4>Albert Camus</h4>
+                        <div>
+                            <p class="price-off">12.950,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>12.302,50$</p>
+                        <button><a href="./HTML/details.html?=id=18">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/El Mundo de Sofía - Jostein Gaarder.webp" alt="">
+                        <h3>El Mundo de Sofía</h3>
+                        <h4>Jostein Gaarder</h4>
+                        <div>
+                            <p class="price-off">12.950,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>12.302,50$</p>
+                        <button><a href="./HTML/details.html?=id=23">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Flores en el Ático - V. C. Andrews.jpg" alt="">
+                        <h3>Flores en el Ático</h3>
+                        <h4>V. C. Andrews</h4>
+                        <div>
+                            <p class="price-off">4.000,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>3.800,00$</p>
+                        <button><a href="./HTML/details.html?=id=32">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Rayuela - Julio Cortázar.webp" alt="">
+                        <h3>Rayuela</h3>
+                        <h4>Julio Cortázar</h4>
+                        <div>
+                            <p class="price-off">21.900,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>20.805,00$</p>
+                        <button><a href="./HTML/details.html?=id=48">Ver Detalles</a></button>
+                    </div>
+                </div>
+                <div class="buttons-before-after">
+                    <button class="before-button-new-entries-books-carousel"
+                        id="before-button-new-entries-books-carousel"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="after-button-new-entries-books-carousel"
+                        id="after-button-new-entries-books-carousel"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="types-books">
+            <h2>Filtar por Tipo de Libro:</h2>
+            <div class="container-types-books">
+                <div class="card-types-books" id="tapaBlanda">
+                    <img src="./Images/2.png" alt="">
+                    <h3>Tapa Blanda</h3>
+                </div>
+                <div class="card-types-books" id="tapaDura">
+                    <img src="./Images/1.png" alt="">
+                    <h3>Tapa Dura</h3>
+                </div>
+                <div class="card-types-books" id="ebook">
+                    <img src="./Images/3.png" alt="">
+                    <h3>Ebook</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-classics-books">
+            <h2>Clásicos</h2>
+            <div class="container-classics-books-carousel">
+                <div class="container-classics-books-carousel-page">
+                    <div class="card-books">
+                        <img src="./Images/Ana Karenina - Lev Tolstói.webp" alt="">
+                        <h3>Ana Karenina</h3>
+                        <h4>Lev Tolstói</h4>
+                        <div>
+                            <p class="price-off">16.950,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>16.102,50$</p>
+                        <button><a href="./HTML/details.html?=id=3">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Cumbres Borrascosas - Emily Brontë.webp" alt="">
+                        <h3>Cumbres Borrascosas</h3>
+                        <h4>Emily Brontë</h4>
+                        <div>
+                            <p class="price-off">22.950,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>21.802,50$</p>
+                        <button><a href="./HTML/details.html?=id=8">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/El Nombre de la Rosa - Umberto Eco.webp" alt="">
+                        <h3>El Nombre de la Rosa</h3>
+                        <h4>Umberto Eco</h4>
+                        <div>
+                            <p class="price-off">20.900,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>19.855,00$</p>
+                        <button><a href="./HTML/details.html?=id=24">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Guerra y Paz - Lev Tolstói.webp" alt="">
+                        <h3>Guerra y Paz</h3>
+                        <h4>Lev Tolstói</h4>
+                        <div>
+                            <p class="price-off">34.950,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>33.202,50$</p>
+                        <button><a href="./HTML/details.html?=id=34">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Historia de Dos Ciudades - Charles Dickens.webp" alt="">
+                        <h3>Historia de Dos Ciudades</h3>
+                        <h4>Charles Dickens</h4>
+                        <div>
+                            <p class="price-off">9.990,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>9.490,50$</p>
+                        <button><a href="./HTML/details.html?=id=36">Ver Detalles</a></button>
+                    </div>
+                </div>
+                <div class="container-classics-books-carousel-page">
+                    <div class="card-books">
+                        <img src="./Images/Jane Eyre - Charlotte Brontë.webp" alt="">
+                        <h3>Jane Eyre</h3>
+                        <h4>Charlotte Brontë</h4>
+                        <div>
+                            <p class="price-off">32.000,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>30.400,00$</p>
+                        <button><a href="./HTML/details.html?=id=37">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Lo Que el Viento se Llevó - Margaret Mitchell.webp" alt="">
+                        <h3>Lo Que el Viento se Llevó</h3>
+                        <h4>Margaret Mitchell</h4>
+                        <div>
+                            <p class="price-off">14.950,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>14.202,50$</p>
+                        <button><a href="./HTML/details.html?=id=41">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Los Miserables - Victor Hugo.webp" alt="">
+                        <h3>Los Miserables</h3>
+                        <h4>Victor Hugo</h4>
+                        <div>
+                            <p class="price-off">490,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>465,50$</p>
+                        <button><a href="./HTML/details.html?=id=43">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Matar a un Ruiseñor - Harper Lee.webp" alt="">
+                        <h3>Matar a un Ruiseñor</h3>
+                        <h4>Harper Lee</h4>
+                        <div>
+                            <p class="price-off">24.900,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>23.655,00$</p>
+                        <button><a href="./HTML/details.html?=id=44">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Romeo y Julieta - William Shakespeare.webp" alt="">
+                        <h3>Romeo y Julieta</h3>
+                        <h4>William Shakespeare</h4>
+                        <div>
+                            <p class="price-off">2.990,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>2.840,50$</p>
+                        <button><a href="./HTML/details.html?=id=49">Ver Detalles</a></button>
+                    </div>
+                </div>
+                <div class="buttons-before-after">
+                    <button class="before-button-classics-books-carousel" id="before-button-classics-books-carousel"><i
+                            class="fa-solid fa-chevron-left"></i></button>
+                    <button class="after-button-classics-books-carousel" id="after-button-classics-books-carousel"><i
+                            class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fantasy-books">
+            <h2>Fantasías</h2>
+            <div class="container-fantasy-books-carousel">
+                <div class="container-fantasy-books-carousel-page">
+                    <div class="card-books">
+                        <img src="./Images/Alicia en el País de las Maravillas - Lewis Carroll.webp" alt="">
+                        <h3>Alicia en el País de las Maravillas</h3>
+                        <h4>Lewis Carroll</h4>
+                        <div>
+                            <p class="price-off">9.950,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>9.452,50$</p>
+                        <button><a href="./HTML/details.html?=id=2">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Drácula - Bram Stoker.webp" alt="">
+                        <h3>Drácula</h3>
+                        <h4>Bram Stoker</h4>
+                        <div>
+                            <p class="price-off">15.000,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>14.250,00$</p>
+                        <button><a href="./HTML/details.html?=id=13">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/El Hobbit - J.R.R. Tolkien.webp" alt="">
+                        <h3>El Hobbit</h3>
+                        <h4>J.R.R. Tolkien</h4>
+                        <div>
+                            <p class="price-off">6.990,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>6.640,50$</p>
+                        <button><a href="./HTML/details.html?=id=21">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/El Maravilloso Mago de Oz - Frank Baum.webp" alt="">
+                        <h3>El Maravilloso Mago de Oz</h3>
+                        <h4>Frank Baum</h4>
+                        <div>
+                            <p class="price-off">11.950,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>11.352,50$</p>
+                        <button><a href="./HTML/details.html?=id=22">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/El Principito - Antoine de Saint-Exupéry.webp" alt="">
+                        <h3>El Principito</h3>
+                        <h4>Antoine de Saint-Exupéry</h4>
+                        <div>
+                            <p class="price-off">14.990,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>14.240,50$</p>
+                        <button><a href="./HTML/details.html?=id=26">Ver Detalles</a></button>
+                    </div>
+                </div>
+                <div class="container-fantasy-books-carousel-page">
+                    <div class="card-books">
+                        <img src="./Images/El Señor de los Anillos - J.R.R. Tolkien.webp" alt="">
+                        <h3>El Señor de los Anillos</h3>
+                        <h4>J.R.R. Tolkien</h4>
+                        <div>
+                            <p class="price-off">65.000,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>61.750,00$</p>
+                        <button><a href="./HTML/details.html?=id=30">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Frankenstein - Mary Shelley.webp" alt="">
+                        <h3>Frankenstein</h3>
+                        <h4>Mary Shelley</h4>
+                        <div>
+                            <p class="price-off">21.900,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>20.805,00$</p>
+                        <button><a href="./HTML/details.html?=id=33">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Harry Potter y la Piedra Filosofal - J. K. Rowling.webp" alt="">
+                        <h3>Harry Potter y la Piedra Filosofal</h3>
+                        <h4>J. K. Rowling</h4>
+                        <div>
+                            <p class="price-off">15.990,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>15.190,50$</p>
+                        <button><a href="./HTML/details.html?=id=35">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/La Vuelta al Mundo en 80 Días - Julio Verne.webp" alt="">
+                        <h3>La Vuelta al Mundo en 80 Días</h3>
+                        <h4>Julio Verne</h4>
+                        <div>
+                            <p class="price-off">15.900,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>15.105,00$</p>
+                        <button><a href="./HTML/details.html?=id=40">Ver Detalles</a></button>
+                    </div>
+                    <div class="card-books">
+                        <img src="./Images/Moby Dick - Herman Melville.webp" alt="">
+                        <h3>Moby Dick</h3>
+                        <h4>Herman Melville</h4>
+                        <div>
+                            <p class="price-off">12.950,00$</p>
+                            <p class="off">5% OFF</p>
+                        </div>
+                        <p>12.302,50$</p>
+                        <button><a href="./HTML/details.html?=id=45">Ver Detalles</a></button>
+                    </div>
+                </div>
+                <div class="buttons-before-after">
+                    <button class="before-button-fantasy-books-carousel" id="before-button-fantasy-books-carousel"><i
+                            class="fa-solid fa-chevron-left"></i></button>
+                    <button class="after-button-fantasy-books-carousel" id="after-button-fantasy-books-carousel"><i
+                            class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <section class="newslatter" id="newslatter">
+            <h2>Newslatter</h2>
+            <p>Suscribite a nuestro <b>Newslatter</b> para conocer más de la LIBRERÍA.</p>
+            <input type="email" name="" id="" placeholder="Ingresa tu email..">
+            <button>Suscribite</button>
+        </section>
+
+    </section>
+    <section id="books" class="books">
+        <div class="container-searcher-filter">
+            <div class="searcher">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Busca aquí..." id="input-search">
+            </div>
+            <div class="filter">
+                <h3 class="title">FILTRAR POR:</h3>
+                <h3 class="sub-title">Sub-Genero</h3>
+                <div>
+                    <label><input type="checkbox" value="Antinovela"> Antinovela</label>
+                    <label><input type="checkbox" value="Aprendizaje"> Aprendizaje</label>
+                    <label><input type="checkbox" value="Aventuras"> Aventuras</label>
+                    <label><input type="checkbox" value="Ciencia Ficción"> Ciencia Ficción</label>
+                    <label><input type="checkbox" value="Diario"> Diario</label>
+                    <label><input type="checkbox" value="Epopeya"> Epopeya</label>
+                    <label><input type="checkbox" value="Erótica"> Erótica</label>
+                    <label><input type="checkbox" value="Existencial"> Existencial</label>
+                    <label><input type="checkbox" value="Fantasía"> Fantasía</label>
+                    <label><input type="checkbox" value="Feminismo"> Feminismo</label>
+                    <label><input type="checkbox" value="Filosófica"> Filosófica</label>
+                    <label><input type="checkbox" value="Gótica"> Gótica</label>
+                    <label><input type="checkbox" value="Histórica"> Histórica</label>
+                    <label><input type="checkbox" value="Horror"> Horror</label>
+                    <label><input type="checkbox" value="Infantil"> Infantil</label>
+                    <label><input type="checkbox" value="Militar"> Militar</label>
+                    <label><input type="checkbox" value="Misterio y/o Suspenso"> Misterio y/o Suspenso</label>
+                    <label><input type="checkbox" value="Psicológica"> Psicológica</label>
+                    <label><input type="checkbox" value="Realista"> Realista</label>
+                    <label><input type="checkbox" value="Romántica"> Romántica</label>
+                    <label><input type="checkbox" value="ragedia"> Tragedia</label>
+                </div>
+            </div>
+        </div>
+        <div class="container-books" id="container-books">
+            <h1>Libros</h1>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container-contact" id="container-contact">
+            <h1>Contactos</h1>
+            <form action="" class="form" id="form">
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="" id="-name" placeholder="Ingresa tu Nombre..." required>
+                </div>
+                <div>
+                    <label for="last-name">Apellido</label>
+                    <input type="text" name="" id="last-name" placeholder="Ingresa tu Apelido...">
+                </div>
+                <div>
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" name="" id="email" placeholder="Ingresa tu Correo Electrónico..." required>
+                </div>
+                <div>
+                    <label for="menssage">Mensaje</label>
+                    <textarea name="" id="menssage" cols="10" rows="10" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensaje <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <section class="footer">
+            <div>
+                <h1><i class="fa-solid fa-book"></i> Librería</h1>
+                <p>Descubre un nuevo mundo entre páginas...</p>
+                <button><i class="fa-brands fa-twitter"></i></button>
+                <button><i class="fa-brands fa-facebook-f"></i></button>
+                <button><i class="fa-brands fa-instagram"></i></button>
+                <button><i class="fa-brands fa-youtube"></i></dbutton>
+            </div>
+            <div>
+                <h3>Enlaces:</h3>
+                <p><a href="">Inicio</a></p>
+                <p><a href="">Libros</a></p>
+                <p><a href="">Contacto</a></p>
+            </div>
+            <div>
+                <h3>Otros Enlaces:</h3>
+                <p>Aviso Legal</p>
+                <p>Política de Privacidad</p>
+                <p>Términos y Condiciones</p>
+            </div>
+            <div>
+                <h3>Contacto Rápido:</h3>
+                <p>+123-456-7890</p>
+                <p>Librería@gmail.com</p>
+                <p>Capital Federal, Argentina</p>
+            </div>
+        </section>
+        <section class="copyright">
+            <h4>COPYRIGTH @ 2023 by</h3>
+        </section>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script>
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyBFSByjaB4ZeMgWg6J0oKFLjQNSRJtuNdA",
+            authDomain: "libreriacacp.firebaseapp.com",
+            projectId: "libreriacacp",
+            storageBucket: "libreriacacp.appspot.com",
+            messagingSenderId: "117727765250",
+            appId: "1:117727765250:web:b6116a37f8327c257a581b",
+            measurementId: "G-8XY02VNEQB"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore()
+    </script>
+    <script src="./Javascript/index.js"></script>
+</body>
+
+</html>
