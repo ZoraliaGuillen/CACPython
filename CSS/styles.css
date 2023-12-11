@@ -10,7 +10,7 @@
 }
 
 * {
-    color: black;
+    color: #616161;
     font-size: 15px;
     padding: 0;
     margin: 0;
@@ -994,7 +994,7 @@ form{
 
 
 
-@media (max-width:991px) {
+@media (max-width:1025px) {
 
     .fa-bars, .close{
         display: block;
