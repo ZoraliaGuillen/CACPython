@@ -1061,9 +1061,13 @@ form{
     }
 
     .container-home{
-        width: 100%;
+        width: 100% !important;
         display: flex;
         flex-direction: column;
+    }
+
+    .container-home-carousel{
+        width: 100% !important;
     }
 
     .books, .books-details{
