@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
         integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
@@ -19,7 +19,7 @@
 <body>
     <header>
         <section class="header-one">
-
+            <p>5% de Descuento en TODA la Web</p>
         </section>
         <section class="header-two">
             <div class="title">
@@ -48,9 +48,16 @@
                             </ul>
                         </li>
                         <li class="navLink"><a href="./index.html#contacto" id="contacto">Contacto</a></li>
+                        <li class="navLink"><a href="./HTML/crud.html" id="crud">CRUD</a></li>
                     </ul>
                 </nav>
                 <button id="open" class="open"><i class="fa-solid fa-bars"></i></button>
+                <button id="open-cart" class="open"><i class="fa-solid fa-cart-shopping"></i></button>
+                <span>0</span>
+                <div id="modal-container" class="modal-container">
+                    <button id="close-cart" class="close-cart"><i class="fa-solid fa-xmark"></i></button>
+                    <p>Carrito En Construcción :(</p>
+                </div>
             </div>
         </section>
     </header>
@@ -58,7 +65,8 @@
         <div class="container-home" id="container-home">
             <div class="title">
                 <h1><i class="fa-solid fa-book"></i> Librería</h1>
-                <p>Descubre un nuevo mundo entre <b class="pages">páginas</b>...</p>
+                <p>..Descubre un nuevo mundo entre <b class="pages">páginas</b>📙</p>
+                <button>Ver Libros...</button>
             </div>
             <div class="container-home-carousel">
                 <div class="book">
@@ -87,6 +95,7 @@
                 <div class="container-recommended-books-carousel-page">
                     <div class="card-books">
                         <img src="./Images/1984 - George Orwell.webp" alt="">
+                        <div class="category">RECOMENDADO</div>
                         <h3>1984</h3>
                         <h4>George Orwell</h4>
                         <div>
@@ -94,7 +103,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>5.690,50$</p>
-                        <button><a href="./HTML/details.html?=id=1">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=1">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>     
                     </div>
                     <div class="card-books">
                         <img src="./Images/Cien Años de Soledad - Gabriel García Márquez.webp" alt="">
@@ -105,7 +117,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>23.655,00$</p>
-                        <button><a href="./HTML/details.html?=id=4">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=4">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Cincuenta Sombras de Grey - E. L. James.webp" alt="">
@@ -116,7 +131,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>9.452,50$</p>
-                        <button><a href="./HTML/details.html?=id=5">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=5">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Diario de Ana Frank - Ana Frank.webp" alt="">
@@ -127,7 +145,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>18.905,00$</p>
-                        <button><a href="./HTML/details.html?=id=9">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=9">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/El Código Da Vinci - Dan Brown.webp" alt="">
@@ -138,7 +159,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>7.552,50$</p>
-                        <button><a href="./HTML/details.html?=id=16">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=16">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                 </div>
                 <div class="container-recommended-books-carousel-page">
@@ -151,7 +175,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>11.875,00$</p>
-                        <button><a href="./HTML/details.html?=id=19">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=19">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/El Psicoanalista - John Katzenbach.webp" alt="">
@@ -162,7 +189,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>180.500,00$</p>
-                        <button><a href="./HTML/details.html?=id=27">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=27">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Juego de Tronos - George R. R. Martin.webp" alt="">
@@ -173,7 +203,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>26.505,00$</p>
-                        <button><a href="./HTML/details.html?=id=38">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=38">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/La Metamorfosis - Franz Kafka.webp" alt="">
@@ -184,7 +217,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>9.490,50$</p>
-                        <button><a href="./HTML/details.html?=id=39">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=39">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Orgullo y Prejuicio - Jane Austen.webp" alt="">
@@ -195,7 +231,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>15.152,50$</p>
-                        <button><a href="./HTML/details.html?=id=47">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=47">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                 </div>
                 <div class="buttons-before-after">
@@ -220,7 +259,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>807,50$</p>
-                        <button><a href="./HTML/details.html?=id=10">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=10">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Don Quijote de la Mancha - Miguel de Cervantes.webp" alt="">
@@ -231,7 +273,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>20.662,50$</p>
-                        <button><a href="./HTML/details.html?=id=12">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=12">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/El Guardián Entre el Centeno - J.D. Salinger.webp" alt="">
@@ -242,7 +287,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>16.102,50$</p>
-                        <button><a href="./HTML/details.html?=id=20">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=20">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/El Perfume - Patrick Süskind.webp" alt="">
@@ -253,7 +301,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>7.552,50$</p>
-                        <button><a href="./HTML/details.html?=id=25">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=25">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/El Retrato de Dorian Grey - Oscar Wilde.webp" alt="">
@@ -264,7 +315,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>5.652,50$</p>
-                        <button><a href="./HTML/details.html?=id=28">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=28">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                 </div>
                 <div class="container-best-sellers-books-carousel-page">
@@ -277,7 +331,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>11.875,00$</p>
-                        <button><a href="./HTML/details.html?=id=29">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=29">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/El Viejo y el Mar - Ernest Hemingway.webp" alt="">
@@ -288,7 +345,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>12.302,50$</p>
-                        <button><a href="./HTML/details.html?=id=31">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=31">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Lolita - Vladimir Nabokov.webp" alt="">
@@ -299,7 +359,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>13.205,00$</p>
-                        <button><a href="./HTML/details.html?=id=42">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=42">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Odisea - Homero.webp" alt="">
@@ -310,7 +373,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>19.000,00$</p>
-                        <button><a href="./HTML/details.html?=id=46">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=46">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Una Habitación Propia - Virginia Woolf.webp" alt="">
@@ -321,7 +387,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>11.875,00$</p>
-                        <button><a href="./HTML/details.html?=id=50">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=50">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                 </div>
                 <div class="buttons-before-after">
@@ -346,7 +415,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>20.852,50$</p>
-                        <button><a href="./HTML/details.html?=id=6">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=6">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Crónicas Marcianas - Ray Bradbury.webp" alt="">
@@ -357,7 +429,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>9.452,50$</p>
-                        <button><a href="./HTML/details.html?=id=7">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=7">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Divina Comedia - Dante Alighieri.webp" alt="">
@@ -368,7 +443,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>16.102,50$</p>
-                        <button><a href="./HTML/details.html?=id=11">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=11">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/El Alquimista - Paulo Coelho.webp" alt="">
@@ -379,7 +457,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>17.100,00$</p>
-                        <button><a href="./HTML/details.html?=id=14">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=14">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/El Arte de la Guerra - Sun Tzu.webp" alt="">
@@ -390,7 +471,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>27.550,00$</p>
-                        <button><a href="./HTML/details.html?=id=15">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=15">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                 </div>
                 <div class="container-new-entries-books-carousel-page">
@@ -403,7 +487,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>16.140,50$</p>
-                        <button><a href="./HTML/details.html?=id=17">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=17">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/El Extranjero - Albert Camus.webp" alt="">
@@ -414,7 +501,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>12.302,50$</p>
-                        <button><a href="./HTML/details.html?=id=18">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=18">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/El Mundo de Sofía - Jostein Gaarder.webp" alt="">
@@ -425,7 +515,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>12.302,50$</p>
-                        <button><a href="./HTML/details.html?=id=23">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=23">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Flores en el Ático - V. C. Andrews.jpg" alt="">
@@ -436,7 +529,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>3.800,00$</p>
-                        <button><a href="./HTML/details.html?=id=32">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=32">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Rayuela - Julio Cortázar.webp" alt="">
@@ -447,7 +543,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>20.805,00$</p>
-                        <button><a href="./HTML/details.html?=id=48">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=48">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                 </div>
                 <div class="buttons-before-after">
@@ -491,7 +590,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>16.102,50$</p>
-                        <button><a href="./HTML/details.html?=id=3">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=3">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Cumbres Borrascosas - Emily Brontë.webp" alt="">
@@ -502,7 +604,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>21.802,50$</p>
-                        <button><a href="./HTML/details.html?=id=8">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=8">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/El Nombre de la Rosa - Umberto Eco.webp" alt="">
@@ -513,7 +618,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>19.855,00$</p>
-                        <button><a href="./HTML/details.html?=id=24">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=24">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Guerra y Paz - Lev Tolstói.webp" alt="">
@@ -524,7 +632,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>33.202,50$</p>
-                        <button><a href="./HTML/details.html?=id=34">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=34">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Historia de Dos Ciudades - Charles Dickens.webp" alt="">
@@ -535,7 +646,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>9.490,50$</p>
-                        <button><a href="./HTML/details.html?=id=36">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=36">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                 </div>
                 <div class="container-classics-books-carousel-page">
@@ -548,7 +662,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>30.400,00$</p>
-                        <button><a href="./HTML/details.html?=id=37">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=37">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Lo Que el Viento se Llevó - Margaret Mitchell.webp" alt="">
@@ -559,7 +676,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>14.202,50$</p>
-                        <button><a href="./HTML/details.html?=id=41">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=41">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Los Miserables - Victor Hugo.webp" alt="">
@@ -570,7 +690,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>465,50$</p>
-                        <button><a href="./HTML/details.html?=id=43">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=43">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Matar a un Ruiseñor - Harper Lee.webp" alt="">
@@ -581,7 +704,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>23.655,00$</p>
-                        <button><a href="./HTML/details.html?=id=44">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=44">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Romeo y Julieta - William Shakespeare.webp" alt="">
@@ -592,7 +718,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>2.840,50$</p>
-                        <button><a href="./HTML/details.html?=id=49">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=49">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                 </div>
                 <div class="buttons-before-after">
@@ -617,7 +746,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>9.452,50$</p>
-                        <button><a href="./HTML/details.html?=id=2">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=2">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Drácula - Bram Stoker.webp" alt="">
@@ -628,7 +760,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>14.250,00$</p>
-                        <button><a href="./HTML/details.html?=id=13">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=13">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/El Hobbit - J.R.R. Tolkien.webp" alt="">
@@ -639,7 +774,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>6.640,50$</p>
-                        <button><a href="./HTML/details.html?=id=21">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=21">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/El Maravilloso Mago de Oz - Frank Baum.webp" alt="">
@@ -650,18 +788,24 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>11.352,50$</p>
-                        <button><a href="./HTML/details.html?=id=22">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=22">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/El Principito - Antoine de Saint-Exupéry.webp" alt="">
                         <h3>El Principito</h3>
-                        <h4>Antoine de Saint-Exupéry</h4>
+                        <h4>Antoine Saint-Exupéry</h4>
                         <div>
                             <p class="price-off">14.990,00$</p>
                             <p class="off">5% OFF</p>
                         </div>
                         <p>14.240,50$</p>
-                        <button><a href="./HTML/details.html?=id=26">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=26">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                 </div>
                 <div class="container-fantasy-books-carousel-page">
@@ -674,7 +818,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>61.750,00$</p>
-                        <button><a href="./HTML/details.html?=id=30">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=30">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Frankenstein - Mary Shelley.webp" alt="">
@@ -685,7 +832,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>20.805,00$</p>
-                        <button><a href="./HTML/details.html?=id=33">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=33">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Harry Potter y la Piedra Filosofal - J. K. Rowling.webp" alt="">
@@ -696,7 +846,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>15.190,50$</p>
-                        <button><a href="./HTML/details.html?=id=35">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=35">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/La Vuelta al Mundo en 80 Días - Julio Verne.webp" alt="">
@@ -707,7 +860,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>15.105,00$</p>
-                        <button><a href="./HTML/details.html?=id=40">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=40">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                     <div class="card-books">
                         <img src="./Images/Moby Dick - Herman Melville.webp" alt="">
@@ -718,7 +874,10 @@
                             <p class="off">5% OFF</p>
                         </div>
                         <p>12.302,50$</p>
-                        <button><a href="./HTML/details.html?=id=45">Ver Detalles</a></button>
+                        <div class="card-books-buttons">
+                            <button class="button-details"><a href="./HTML/details.html?=id=45">Ver Detalles</a></button>
+                            <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></i></button>
+                        </div>  
                     </div>
                 </div>
                 <div class="buttons-before-after">

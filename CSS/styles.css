@@ -1,9 +1,10 @@
 :root {
-    --orange: #FF5500;
-    --orange2: #ff7733;
-    --purple1: #3aa7a4;
-    --purple2: #48d1cd;
-    --yellow: #FED800;
+    --orange: #E5771E;
+    --turquoise1: #3AA7A4;
+    --turquoise2: #48D1CD;
+    --yellow: #F3B02E;
+    --grey1: #C1C1C1;
+    --grey2: #E0E0E0;
     --box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
     --border: 1px solid #C1C1C1;
 }
@@ -18,7 +19,7 @@
     outline: none;
     list-style: none;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -31,32 +32,38 @@ header {
 .header-two {
     padding: 10px 50px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
 .header-one {
-    background-color: var(--purple2);
+    background-color: var(--turquoise2);
     height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-one p{
+    font-size: 12.5px;
+    font-weight: 500;
 }
 
 .header-two {
-    background-color: var(--purple1);
+    background-color: var(--turquoise1);
     height: 50px;
     padding: 10px 75px;
 }
 
 .header-two .title a{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 5px;
 }
 
 .header-two .title i{
-    color: var(--purple2);
+    color: var(--turquoise2);
     font-size: 20px;
 }
 
@@ -88,7 +95,13 @@ header {
     color: white;
     display: block;
     padding: 5px 10px;
+    font-weight: 500;
 }
+
+.nav-bar ul li a:hover{
+    background-color: var(--grey1);
+}
+
 
 .fa-angle-down {
     color: white;
@@ -96,7 +109,7 @@ header {
 
 .nav-bar ul ul {
     position: absolute;
-    background-color: var(--purple2);
+    background-color: var(--orange);
     width: 200px;
     display: none;
 }
@@ -104,12 +117,12 @@ header {
 .nav-bar ul li ul li {
     position: relative;
     border-bottom: 1px solid white;
-    padding: 5px 10px;
 }
 
 .nav-bar ul ul a {
-    color: black;
+    color: white;
     font-size: 12.5px;
+    padding: 10px 10px;
 }
 
 .nav-bar li:hover>ul {
@@ -118,10 +131,72 @@ header {
     display: block;
 }
 
+#open-cart{
+    position: relative;
+    background-color: var(--turquoise2);
+    padding: 5px;
+}
+
+span{
+    position: absolute;
+    top: 25px; right:62.5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12.5px;
+}
+
+
+.fa-cart-shopping{
+    color: white;
+}
 
 .fa-bars, .close{
     display: none;
 }
+
+.modal-container{
+    border: 1px solid var(--grey1);
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 75px; right:75px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container .close-cart{
+    background-color: var(--orange);
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.modal-container .close-cart i{
+    color: white;
+}
+
+.modal-container{ 
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-container.visibility-cart{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
 
 .container-home-carousel .book{
     display: flex;
@@ -170,6 +245,72 @@ header {
     align-items: center;
 }
 
+.container-home{
+    background-color: #c7c7c7;
+}
+
+.container-home .title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container-home .title h1{
+    font-size: 50px;
+    color: white;
+}
+
+.container-home .title i{
+    font-size: 40px;
+    color: var(--turquoise1)
+}
+
+.container-home .title p{
+    color: #616161;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.title button{
+    background-color: var(--yellow);
+    padding: 5px 10px;
+    color: white;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.pages{
+    font-weight: bold;
+    color: var(--orange);
+    font-size: 25px;
+}
+
+.book button{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color:var(--orange);
+}
+
+.book button i{
+    color: white;
+}
+
+.container-home-carousel .book{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container-home{
+    padding-top: 75px;
+}
+
 
 
 
@@ -203,7 +344,7 @@ header {
     position: absolute;
 }
 
-img {
+.card-books > img {
     width: 200px;
     height: 300px;
 }
@@ -218,7 +359,14 @@ img {
     flex-direction: column;
 }
 
-
+.container-recommended-books,
+.container-best-sellers-books,
+.container-new-entries-books,
+.container-classics-books,
+.container-fantasy-books,
+.types-books{
+    margin-top: 100px;
+}
 
 
 .container-best-sellers-books-carousel-page img,
@@ -230,45 +378,29 @@ img {
     height: 300px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.container-recommended-books,
-.container-best-sellers-books,
-.container-new-entries-books,
-.container-classics-books,
-.container-fantasy-books,
-.types-books{
-    padding: 50px 75px 0px 75px;
-}
-
 .container-recommended-books h2,
 .container-best-sellers-books h2,
 .container-new-entries-books h2,
 .container-classics-books h2,
-.container-fantasy-books h2{
-    font-size: 20px;
+.container-fantasy-books h2,
+.types-books{
+    font-size: 25px;
     font-weight: bold;
-    padding-bottom: 10px;
+    padding: 10px 75px 10px 75px;
 }
 
 .container-recommended-books-carousel,
 .container-best-sellers-books-carousel,
-.container-new-entries-books-carousel{
+.container-new-entries-books-carousel,
+.container-classics-books-carousel,
+.container-fantasy-books-carousel{
+    
+    padding: 25px 75px 25px 75px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: var(--grey2);
 }
 
 .container-recommended-books-carousel-page,
@@ -291,6 +423,7 @@ img {
     height: auto;
     padding: 10px;
     border: 1px #C1C1C1 solid;
+    background-color:white;
 }
 
 .card-books h3{
@@ -304,7 +437,6 @@ img {
 }
 
 .card-books > div{
-    padding-top: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -319,21 +451,28 @@ img {
 .card-books > div .off{
     color: white;
     background-color: var(--orange);
-    padding: 0px 5px;
+    padding: 2.5px 5px;
 }
 
 .card-books > p{
     font-size: 17.5px;
     font-weight: bold;
-    padding-bottom: 10px;
 }
 
-.card-books > button{
-    background-color: var(--purple1);
-    padding: 0px 5px;
+.card-books .card-books-buttons .button-details{
+    background-color: var(--turquoise1);
+    padding: 2.5px 5px;
+    color: white;
 }
 
-.card-books > button a{
+.card-books .card-books-buttons .button-cart-shopping{
+    background-color: var(--yellow);
+    padding: 2.5px 5px;
+    color: white;
+}
+
+
+.card-books .card-books-buttons button a, .card-books .card-books-buttons button i{
     color: white;
 }
 
@@ -346,7 +485,7 @@ img {
 }
 
 .buttons-before-after button{
-    background-color: #C1C1C1;
+    background-color: var(--grey1);
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -418,7 +557,7 @@ img {
 
 .newslatter button{
     color: white;
-    background-color: var(--purple1);
+    background-color: var(--yellow);
     padding: 5px 10px;
 }
 
@@ -526,7 +665,7 @@ input[type="checkbox"]{
 
 .card-books-details .details h4{
     font-size: 20px;
-    color: var(--purple1);
+    color: var(--turquoise1);
     border-bottom: 1px solid #C1C1C1;
     margin-bottom: 10px;
 }
@@ -539,7 +678,7 @@ input[type="checkbox"]{
 }
 
 .card-books-details .details .genres button{
-    background-color: var(--purple1);
+    background-color: var(--turquoise1);
     padding: 0px 10px;
     color: white;
     margin-top: 10px;
@@ -596,7 +735,7 @@ input[type="checkbox"]{
 
 
 .footer{
-    background-color: var(--purple1);
+    background-color: var(--turquoise1);
     padding: 25px 75px;
     display: flex;
     flex-direction: row;
@@ -612,71 +751,16 @@ input[type="checkbox"]{
 
 
 .copyright{
-    background-color: #C1C1C1;
+    background-color: var(--turquoise2);
     text-align: center;
-}
-
-.container-home{
-    background-color: #c7c7c7;
-}
-
-.container-home .title{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.container-home .title h1{
-    font-size: 50px;
     color: white;
-}
-
-.container-home .title i{
-    font-size: 40px;
-    color: var(--purple1)
-}
-
-.container-home .title p{
-    color: black;
-    font-size: 25px;
-}
-
-.pages{
-    font-weight: bold;
-    color: var(--orange);
-    font-size: 25px;
-}
-
-.book button{
-    width: 25px;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color:var(--orange);
-}
-
-.book button i{
-    color: white;
-}
-
-.container-home-carousel .book{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.container-home{
-    padding-top: 75px;
 }
 
 
 .footer div button{
     width: 20px;
     height: 20px;
-    background-color: var(--orange);
+    background-color: var(--turquoise2);
 }
 
 .footer div button i{
@@ -694,7 +778,9 @@ input[type="checkbox"]{
 
 .footer div h1 i{
     font-size: 20px;
-    color: var(--purple2);
+    color: var(--turquoise2);
+    padding: 5px;
+    border-radius: 50%;
 }
 
 .container-contact{
@@ -746,8 +832,164 @@ input[type="checkbox"]{
 }
 
 .form button i{
-    color: var(--purple2);
+    color: var(--turquoise2);
 }
+
+
+.container-home-carousel{
+    background-image: linear-gradient(to top, rgba(199, 199, 199, 0.1),
+    rgb(199, 199, 199, 0.9)), url(../Images/Bookshop.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.crud{
+    width: 100%;
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.crud h2{
+    padding: 0px 75px;
+    font-size: 20px;
+}
+
+.button-create{
+    background-color: var(--turquoise1);
+    margin: 10px 75px;
+    padding: 5px 10px;
+}
+
+.button-create i{
+    color: white;
+}
+
+#app{
+    padding-top: 75px;
+}
+
+table, th, td{
+    font-size: 12.5px;
+    border: 1px solid var(--grey1);
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: var(--grey2);
+}
+
+th, td{
+    padding: 5px 0px;
+}
+
+.td-descirption{
+    width: 25%;
+}
+
+.crud-image{
+    width: 150px;
+}
+
+.button-update{
+    background-color: var(--yellow);
+    padding: 5px 0px;
+}
+
+.button-update a, .button-create a{
+    color: white;
+}
+
+.button-delete{
+    color: white;
+    background-color: var(--orange);
+    padding: 5px 0px;
+}
+
+.button-update i, .button-delete i{
+    color: white;
+}
+
+.crud{
+    padding: 50px 75px;
+}
+
+form{
+    width: 500px;
+    background-color: var(--grey2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.crud-create, .crud-update{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb-3{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.mb-3 > label{
+    width: 50%;
+    background-color: var(--grey1);
+    border: 1px solid var(--grey1);
+    padding: 5px 10px;
+}
+
+.mb-3 > input{
+    width: 50%;
+    border: 1px solid var(--grey1);
+    padding: 5px 10px;
+}
+
+.button-disk{
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: var(--orange);
+    color: white;
+}
+
+.button-disk i{
+    color: white;
+}
+
+#app h2{
+    font-size: 20px;
+    padding: 25px 75px 0px 75px;
+}
+/* CARRITO */
+
+
+.card-books{
+    position: relative;
+}
+
+.category{
+    position: absolute;
+    top: 10px; left: 10;
+    background-color: var(--grey1);
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 10px;
+}
+
+
+
+
+
 
 @media (max-width:991px) {
 
@@ -762,7 +1004,7 @@ input[type="checkbox"]{
 
     .close i {
         font-size: 20px;
-        color: var(--purple1);
+        color: var(--turquoise1);
     }
 
     .nav-bar-books {
@@ -803,7 +1045,7 @@ input[type="checkbox"]{
 
 
     .fa-angle-down {
-    color: var(--purple1);
+    color: var(--turquoise1);
 }
 
     .nav-bar-books.visibility {

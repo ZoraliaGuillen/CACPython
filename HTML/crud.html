@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+
+<body>
+    <header>
+        <section class="header-one">
+
+        </section>
+        <section class="header-two">
+            <div class="title">
+                <a href="../index.html#inicio">
+                    <i class="fa-solid fa-book"></i>
+                    <h1>Librería</h1>
+                </a>
+            </div>
+            <div class="nav-bar">
+                <nav>
+                    <ul id="nav-bar-books" class="nav-bar-books">
+                        <button id="close" class="close"><i class="fa-solid fa-xmark"></i></button>
+                        <li class="navLink"><a href="../index.html#inicio" id="inicio">Inicio</a></li>
+                        <li class="navLink"><a href="../HTML/crud.html" id="crud">CRUD</a></li>
+                    </ul>
+                </nav>
+                <button id="open" class="open"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section>
+            <div id="app" class="container">
+                <h2>Lista de Libros</h2>
+                <button class="button-create"><a href="./crud-create.html"><i class="fa-solid fa-circle-plus"></i> Crear Nuevo Libro</a></button>
+                <div v-if="error">
+                    <p>Lo Sentimos, No Encontramos Ningún Libro</p>
+                </div>
+                <div v-else>
+                    <section v-if="cargando">
+                        <div class="spinner-border"></div>
+                        <p>Cargando Libros...</p>
+                    </section>
+                    <section v-else>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Id</th>
+                                        <th scope="col">Foto</th>
+                                        <th scope="col">Título</th>
+                                        <th scope="col">Autor</th>
+                                        <th scope="col">Descripción</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Precio Off</th>
+                                        <th scope="col">Género</th>
+                                        <th scope="col">Sub-Género</th>
+                                        <th scope="col">ISBN</th>
+                                        <th scope="col">Editorial</th>
+                                        <th scope="col">Encuadernación</th>
+                                        <th scope="col">Año</th>
+                                        <th scope="col">Pais</th>
+                                        <th scope="col">Idioma</th>
+                                        <th scope="col">Categoría</th>
+                                        <th scope="col">CRUD</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="" v-for="producto in productos">
+                                        <td scope="row">{{producto.id}}</td>
+                                        <td><img class="crud-image" :src="producto.photo" :alt="producto.title"></td>
+                                        <td>{{producto.title}}</td>
+                                        <td>{{producto.author}}</td>
+                                        <td class="td-descirption">{{producto.description}}</td>
+                                        <td>{{producto.price}}</td>
+                                        <td>{{producto.priceOff}}</td>
+                                        <td>{{producto.genre}}</td>
+                                        <td>{{producto.subgenre}}</td>
+                                        <td>{{producto.isbn}}</td>
+                                        <td>{{producto.editorial}}</td>
+                                        <td>{{producto.type}}</td>
+                                        <td>{{producto.year}}</td>
+                                        <td>{{producto.country}}</td>
+                                        <td>{{producto.language}}</td>
+                                        <td>{{producto.category}}</td>
+                                        <td>
+                                            <button class="button-update"><a :href="'crud-update.html?id='+ producto.id"><i class="fa-solid fa-pen-to-square"></i> Editar</a></button>
+                                            <button class="button-delete" type="button" v-on:click="deletee(producto.id)"><i class="fa-solid fa-trash"></i> Eliminar</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div>
+                <h1><i class="fa-solid fa-book"></i> Librería</h1>
+                <p>Descubre un nuevo mundo entre páginas...</p>
+                <button><i class="fa-brands fa-twitter"></i></button>
+                <button><i class="fa-brands fa-facebook-f"></i></button>
+                <button><i class="fa-brands fa-instagram"></i></button>
+                <button><i class="fa-brands fa-youtube"></i></dbutton>
+            </div>
+            <div>
+                <h3>Enlaces:</h3>
+                <p><a href="">Inicio</a></p>
+                <p><a href="">Libros</a></p>
+                <p><a href="">Contacto</a></p>
+            </div>
+            <div>
+                <h3>Otros Enlaces:</h3>
+                <p>Aviso Legal</p>
+                <p>Política de Privacidad</p>
+                <p>Términos y Condiciones</p>
+            </div>
+            <div>
+                <h3>Contacto Rápido:</h3>
+                <p>+123-456-7890</p>
+                <p>Librería@gmail.com</p>
+                <p>Capital Federal, Argentina</p>
+            </div>
+        </section>
+        <section class="copyright">
+            <h4>COPYRIGTH @ 2023 by</h3>
+        </section>
+    </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+    <script src="../Javascript/crud.js"></script>
+</body>
+
+</html>

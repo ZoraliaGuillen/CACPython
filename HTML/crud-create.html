@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+
+<body>
+    <header>
+        <section class="header-one">
+
+        </section>
+        <section class="header-two">
+            <div class="title">
+                <a href="../index.html#inicio">
+                    <i class="fa-solid fa-book"></i>
+                    <h1>Librería</h1>
+                </a>
+            </div>
+            <div class="nav-bar">
+                <nav>
+                    <ul id="nav-bar-books" class="nav-bar-books">
+                        <button id="close" class="close"><i class="fa-solid fa-xmark"></i></button>
+                        <li class="navLink"><a href="../index.html#inicio" id="inicio">Inicio</a></li>
+                        <li class="navLink"><a href="../HTML/crud.html" id="crud">CRUD</a></li>
+                    </ul>
+                </nav>
+                <button id="open" class="open"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="app">
+          <div class="crud-create">
+            <form>
+              <h2>Crear Nuevo Libro</h2>
+              <div class="mb-3">
+                <label for="photo">Foto</label>
+                <input type="text" name="photo" id="photo" v-model="photo">
+              </div>
+              <div class="mb-3">
+                <label for="title">Título</label>
+                <input type="text" name="title" id="title" v-model="title">
+              </div>
+              <div class="mb-3">
+                <label for="author">Autor</label>
+                <input type="text" name="author" id="author" v-model="author">
+              </div>
+              <div class="mb-3">
+                <label for="description">Descripción</label>
+                <input type="text" name="description" id="description" v-model="description">
+              </div>
+              <div class="mb-3">
+                <label for="price">Precio</label>
+                <input type="number" name="price" id="price" v-model="price">
+              </div>
+              <div class="mb-3">
+                <label for="priceOff">Precio Off</label>
+                <input type="number" name="priceOff" id="priceOff" v-model="priceOff">
+              </div>
+              <div class="mb-3">
+                <label for="genre">Género</label>
+                <input type="text" name="genre" id="genre" v-model="genre">
+              </div>
+              <div class="mb-3">
+                <label for="subgenre">Sub-Género</label>
+                <input type="text" name="subgenre" id="subgenre" v-model="subgenre">
+              </div>
+              <div class="mb-3">
+                <label for="isbn">ISBN</label>
+                <input type="text" name="isbn" id="isbn" v-model="isbn">
+              </div>
+              <div class="mb-3">
+                <label for="editorial">Editorial</label>
+                <input type="text" name="editorial" id="editorial" v-model="editorial">
+              </div>
+              <div class="mb-3">
+                <label for="type">Encuadernación</label>
+                <input type="text" name="type" id="type" v-model="type">
+              </div>
+              <div class="mb-3">
+                <label for="year">Año</label>
+                <input type="text" name="year" id="year" v-model="year">
+              </div>
+              <div class="mb-3">
+                <label for="country">País</label>
+                <input type="text" name="country" id="country" v-model="country">
+              </div>
+              <div class="mb-3">
+                <label for="language">Idioma</label>
+                <input type="text" name="language" id="language" v-model="language">
+              </div>
+              <div class="mb-3">
+                <label for="category">Categoría</label>
+                <input type="text" name="category" id="category" v-model="category">
+              </div>
+                <button type="button" class="button-disk" v-on:click="createe()"><i class="fa-solid fa-floppy-disk"></i> Guardar</button>
+            </form>
+          </div>
+          <section>
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div>
+                <h1><i class="fa-solid fa-book"></i> Librería</h1>
+                <p>Descubre un nuevo mundo entre páginas...</p>
+                <button><i class="fa-brands fa-twitter"></i></button>
+                <button><i class="fa-brands fa-facebook-f"></i></button>
+                <button><i class="fa-brands fa-instagram"></i></button>
+                <button><i class="fa-brands fa-youtube"></i></dbutton>
+            </div>
+            <div>
+                <h3>Enlaces:</h3>
+                <p><a href="">Inicio</a></p>
+                <p><a href="">Libros</a></p>
+                <p><a href="">Contacto</a></p>
+            </div>
+            <div>
+                <h3>Otros Enlaces:</h3>
+                <p>Aviso Legal</p>
+                <p>Política de Privacidad</p>
+                <p>Términos y Condiciones</p>
+            </div>
+            <div>
+                <h3>Contacto Rápido:</h3>
+                <p>+123-456-7890</p>
+                <p>Librería@gmail.com</p>
+                <p>Capital Federal, Argentina</p>
+            </div>
+        </section>
+        <section class="copyright">
+            <h4>COPYRIGTH @ 2023 by</h3>
+        </section>
+    </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+    <script src="../Javascript/crud.js"></script>
+</body>
+
+</html>

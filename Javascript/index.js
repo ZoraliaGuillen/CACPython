@@ -126,6 +126,12 @@ function print(id) {
             books.style.display = "none"
             contact.style.display = "flex"
             break;
+        case "crud":
+            home.style.display = "none"
+            books.style.display = "none"
+            contact.style.display = "none"
+            crud.style.display = "flex"
+            break;
         default:
             home.style.display = "flex"
             books.style.display = "none"
@@ -142,6 +148,7 @@ function templateCardBooks(array) {
         html += `
         <div class="card-books">
             <img src="${array[i].photo}" alt="${array[i].title}">
+            <div class="category">${array[i].category}</div>
             <h3>${array[i].title}</h3>
             <h4>${array[i].author}</h4>
             <div>
@@ -149,12 +156,16 @@ function templateCardBooks(array) {
                 <p class="off">5% OFF</p>
             </div>
             <p>${array[i].priceOff}</p>
-            <button><a href="./HTML/details.html?=id=${array[i].id}">Ver Detalles</a></button>
+            <div class="card-books-buttons">
+                <button class="button-details"><a href="./HTML/details.html?=id=${array[i].id}">Ver Detalles</a></button>
+                <button class="button-cart-shopping"><i class="fa-solid fa-cart-plus"></i></button>
+            </div> 
         </div>                 
         `
     }
     cardBooks.innerHTML = html;
 }
+
 
 // NAV PÁGINA DETALLES
 
@@ -282,7 +293,7 @@ function filtrosCombinados() {
 
     if (inputLimpio !== "" && checkboxsSeleccionados.length > 0) {
         checkboxsSeleccionados.map(subgenre => filtrado.push(...arrayFiltrado.filter(
-            dataBooks => dataBooks.title.toLowerCase().trim().includes(inputLimpio) && dataBooks.subgenre === subgenre)
+            dataBooks => dataBooks.title?.toLowerCase().trim().includes(inputLimpio) && dataBooks.subgenre === subgenre)
         ))
     }
     else if (inputLimpio !== "" && checkboxsSeleccionados.length == 0) {
@@ -504,7 +515,7 @@ showPageFantasy(currentPagesFantasyBooks);
 
 const form = document.getElementById("form");
 
-form.addEventListener("submit", function(event) {
+form.addEventListener("submit", function (event) {
     event.preventDefault();
 
     const name = document.getElementById("name").value;
@@ -517,4 +528,31 @@ form.addEventListener("submit", function(event) {
     console.log("Email:", email);
     console.log("Mensaje:", menssage);
     form.reset();
-  });
+});
+
+// MENU DESPLEGABLE
+
+let cartContainer = document.querySelector("#modal-container");
+let openc = document.querySelector("#open-cart");
+let closec = document.querySelector("#close-cart");
+
+
+openc.addEventListener("click", () => {
+    cartContainer.classList.add("visibility-cart");
+})
+
+closec.addEventListener("click", () => {
+    cartContainer.classList.remove("visibility-cart");
+})
+
+
+let listProductHTML = document.querySelector('.container-books');
+
+listProductHTML.addEventListener('click', (event) => {
+    let positionClick = event.target;
+    if (positionClick.classList.contains('addCart')) {
+        let product_id = positionClick.parentElement.dataset.title;
+        console.log(product_id);
+        console.log(positionClick)
+    }
+})
