@@ -208,15 +208,23 @@ span{
     height: 375px;
 }
 
-.container-home-carousel{
-    /* background-image: url(../Images/Captura.JPG);
+.container-home > .title{
     background-size: cover;
-    background-position: center; */
+    background-position: center;
     display: flex;
     flex-direction: column;
 }
 
 
+
+.container-home-carousel{
+    background-image: linear-gradient(to right, rgb(199, 199, 199),
+    rgb(199, 199, 199, 0.01)), url(../Images/Bookshop.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
 
 
 
@@ -258,6 +266,7 @@ span{
 .container-home .title h1{
     font-size: 50px;
     color: white;
+    padding: 5px 10px;
 }
 
 .container-home .title i{
@@ -269,6 +278,7 @@ span{
     color: #616161;
     font-size: 25px;
     font-weight: bold;
+    padding: 5px 10px;
 }
 
 
@@ -835,13 +845,6 @@ input[type="checkbox"]{
     color: var(--turquoise2);
 }
 
-
-.container-home-carousel{
-    background-image: linear-gradient(to top, rgba(199, 199, 199, 0.1),
-    rgb(199, 199, 199, 0.9)), url(../Images/Bookshop.jpg);
-    background-position: center;
-    background-size: cover;
-}
 
 .crud{
     width: 100%;
